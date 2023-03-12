@@ -15,7 +15,6 @@ export async function getStaticPaths() {
 
 const selectedCategory = Astro.props.single;
 const faqs = selectedCategory.frontmatter.faqs;
-console.log(faqs)
 
 function activeDropdown(prop :any){
     console.log(prop)
