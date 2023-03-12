@@ -1,4 +1,5 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
 import FaqContainer from "../components/faq/faqContainer.astro";
 
 export async function getStaticPaths() {
@@ -20,10 +21,10 @@ function activeDropdown(prop :any){
     console.log(prop)
 }
 ---
-<h1>{selectedCategory.frontmatter.title}</h1>
+<MainLayout title={selectedCategory.frontmatter.title}>
+  
+  <h1>{selectedCategory.frontmatter.title}</h1>
 
-<FaqContainer faqData={faqs}/>
+  <FaqContainer faqData={faqs}/>
 
-<script>
-
-</script>
+</MainLayout>

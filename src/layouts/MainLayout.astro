@@ -1,4 +1,6 @@
 ---
+import Header from '../components/header.astro';
+
 export interface Props {
 	title: string;
 }
@@ -14,8 +16,11 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<style>
+		</style>
 	</head>
-	<body>
+	<body class="bg-[#D9E5D9] z-[0] h-[200vh]">
+        <Header/>
 		<slot />
 	</body>
 </html>
