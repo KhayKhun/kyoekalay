@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "predeploy": "npm run build",
+    "predeploy": "astro build",
     "deploy":"gh-pages -d build",
     "start": "astro dev",
     "build": "astro build",
