@@ -1,0 +1,19 @@
+---
+import FaqCard from "./faqCard.astro";
+
+const {faqData} = Astro.props;
+---
+
+{
+    faqData.map((faq : any)=> <FaqCard id={faq.id} question={faq.question} answer={faq.answer}/>)
+}
+
+<script>
+    const faqQuestion = document.querySelectorAll("#faqQuestion");
+    faqQuestion.forEach((singleQnA) => {
+    singleQnA.addEventListener("click", function () {
+        this.lastElementChild.classList.toggle('hidden')
+        console.log(this.lastElementChild)
+    });
+  });
+</script>

@@ -1,0 +1,30 @@
+---
+import FaqContainer from "../components/faq/faqContainer.astro";
+
+export async function getStaticPaths() {
+  const markdowns = await Astro.glob("../markdowns/*.md");
+  return markdowns.map((single) => ({
+    params: {
+      category: single.frontmatter.slug,
+    },
+    props: {
+      single,
+    },
+  }));
+}
+
+const selectedCategory = Astro.props.single;
+const faqs = selectedCategory.frontmatter.faqs;
+console.log(faqs)
+
+function activeDropdown(prop :any){
+    console.log(prop)
+}
+---
+<h1>{selectedCategory.frontmatter.title}</h1>
+
+<FaqContainer faqData={faqs}/>
+
+<script>
+
+</script>
