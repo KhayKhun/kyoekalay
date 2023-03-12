@@ -1,0 +1,22 @@
+---
+const {label,image,withBg} = Astro.props;
+---
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Fredoka:wght@300&display=swap');
+    span{
+        font-family: 'Fredoka', sans-serif;
+    }
+</style>
+
+{
+    withBg ? 
+        <div class="bg-[#EE9471] flex-col flex items-center justify-center h-[210px] rounded-2xl shadow-md shadow-gray-500">
+            <img src={image} class="w-[100px] h-[100px]"/>    
+            <span class="text-[22px] font-bold">{label}</span>
+        </div> 
+        : 
+        <div class="flex-col flex items-center justify-center h-[210px]">
+            <img src={image} class="w-[160px] h-[160px]"/>    
+            <span class="text-[22px] font-bold">{label}</span>
+        </div>
+}

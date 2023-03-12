@@ -1,0 +1,30 @@
+---
+import Logo from '../image/mainPage/logo.png';
+import Image44 from '../image/mainPage/image44.png';
+---
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Fredoka:wght@300&display=swap');
+       h2{
+            font-family: 'Fredoka One', cursive;
+        }
+        ul{
+            font-family: 'Fredoka', sans-serif;
+        }
+        .nav{
+            background-color: rgba(217, 229, 217, 0.5);
+        }
+</style>
+
+<div class="bg-[#03585F] px-[5vw] py-[25px] w-screen text-white grid grid-cols-12 grid-rows-6">
+    <div class="flex col-span-4 items-center">
+        <img src={Logo} class="w-[50px] h-[50px]"/>
+        <h2 class="text-[25px] tracking-[8px] ml-[9px]">KYOE KALAY</h2>
+    </div>
+    <div class="col-span-6 col-start-7 flex justify-end items-center gap-[5px]">
+        <span class="text-[20px]">Feedback :</span>
+        <input class="bg-gray-300 w-[65%] h-[60%] rounded-full"/>
+        <button class="bg-gray-300 rounded-full w-[50px] h-[50px]"></button>
+    </div>
+    <img src={Image44} class="col-span-4 row-span-3 col-start-9"/>
+    <p class="col-span-12 m-auto">@Team Victory</p>
+</div>

@@ -1,0 +1,32 @@
+---
+import CategoryCard from "./categoryCard.astro";
+
+import Business from '../image/mainPage/business.png';
+import Community from '../image/mainPage/community.png';
+import Education from '../image/mainPage/education.png';
+import Family from '../image/mainPage/family.png';
+import Music from '../image/mainPage/music.png';
+import Notification from '../image/mainPage/notification.png';
+import PositiveMindset from '../image/mainPage/positive-mindset.png';
+import Relationship from '../image/mainPage/relationship.png';
+import SayChauk from '../image/mainPage/SayChauk.png';
+---
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Fredoka:wght@300&display=swap');
+    .concert-one{
+        font-family: 'Concert One', cursive;
+    }
+</style>
+<div class="grid grid-cols-3 my-[40px] w-[90vw] gap-5">
+    <h1 class="concert-one col-span-3 text-[50px] mx-auto">Categories</h1>
+    <CategoryCard class="" withBg={true} label="Good Community" image={Community}/>
+    <CategoryCard class="" withBg={true} label="Relationship" image={Relationship}/>
+    <CategoryCard class="" withBg={true} label="Family" image={Family}/>
+    <CategoryCard class="" withBg={true} label="Bussiness" image={Business}/>
+    <CategoryCard class="" withBg={true} label="Education" image={Education}/>
+    <CategoryCard class="" withBg={true} label="Positive mindset" image={PositiveMindset}/>
+    <CategoryCard class="" withBg={false} label="Music" image={Music}/>
+    <CategoryCard class="" withBg={true} label="Addiction" image={SayChauk}/>
+    <CategoryCard class="" withBg={false} label="" image={Notification}/>
+</div>

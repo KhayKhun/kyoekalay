@@ -1,0 +1,32 @@
+---
+import Home from '../image/mainPage/home.png'
+---
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Merriweather&family=Playball&display=swap');
+
+    h2 {
+        font-family: 'Fredoka One', cursive;
+    }
+    span{
+        font-family: 'Playball', cursive;
+        color: #EE9471;
+        font-size: 24px;
+    }
+    p{
+        font-family: 'Merriweather', serif;
+        font-size: 20px;
+    }
+</style>
+<div class="bg-white w-screen mt-[20px] p-[80px] flex items-center">
+    <img src={Home} class="w-[30vw]"/>
+    <div class="flex flex-col items-center gap-[50px] w-[50vw]">
+        <h2 class="text-[#03585F] text-[52px] tracking-widest">Your Home</h2>
+        <div class="flex flex-col items-center tracking-[0.8px]">
+            <p>Not a website but a "<span>Home</span>" with <span>Love</span> and <span>Warmth</span></p>
+            <p>A place, you can trust with no criticism, hate</p>
+            <p>A "home" ... your Home!</p>
+            <p>From now Everything is safe here</p>
+        </div>
+        <button class="bg-[#EE9471] text-white py-[12px] px-[40px] rounded-lg text-[25px]">Explore</button>
+    </div>
+</div>
