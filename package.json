@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist/",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
