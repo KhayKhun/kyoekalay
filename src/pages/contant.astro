@@ -1,0 +1,24 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import ContantImg from '../image/contant.png';
+
+import ConcantCard1 from "../components/contant/concantCard1.astro";
+---
+
+<MainLayout title="Contant">
+    <div class="mt-[80px]"/>
+
+    <div>
+        <div class="flex w-screen h-[400px]">
+            <div class="flex flex-col w-[40%]">
+                <span>Communication Services</span>
+                <hr/>
+                <span>the connection between patients and psychologists</span>
+            </div>
+            <img src={ContantImg} class="w-[60%]"/>
+        </div>
+        <div>
+            <ConcantCard1 title="Dr. Thinne (Life Therapist)" link="https://www.facebook.com/HeptaMentalHealth?mibextid=ZbWKwL"/>
+        </div>
+    </div>
+</MainLayout>

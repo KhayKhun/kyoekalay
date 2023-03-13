@@ -1,0 +1,13 @@
+---
+const {title,link} = Astro.props
+
+import Facebook from '../../image/facebook.png';
+---
+
+<div class="bg-white rounded-lg flex flex-col w-[300px]">
+    <span>{title}</span>
+    <div class="flex">
+        <img src={Facebook} class="w-[50px] h-[50px]"/>
+        <a href={link} class="underline">{link}</a>
+    </div>
+</div>
