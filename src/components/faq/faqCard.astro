@@ -37,43 +37,45 @@ import e7 from '../../voices/e7.mp3';
 
 
 <div class="cursor-pointer w-[90vw]" id="faqQuestion">
-    <div class="flex justify-between items-center bg-[#EE9471] w-full h-[50px] px-[10px] rounded-t-lg rounded-b-lg"><span class= "text-[26px]">{question}</span><img src={Arrow} class="w-[24px] h-[24px]"/></div>
-    <div class="hidden bg-white w-full rounded-b-lg p-[10px]">
+    <div class="flex justify-between items-center bg-[#EE9471] w-full h-[50px] px-[10px] rounded-t-lg rounded-b-lg"><span class= " text-[13px] md:text-[17px] lg:text-[24px]">{question}</span><img src={Arrow} class="w-[24px] h-[24px]"/></div>
+    <div class="hidden bg-white w-full rounded-b-lg p-[10px] text-[13px] md:text-[17px] lg:text-[24px]">
         {answer}
         
-        {
-            id == 'a1' ? <audio controls src={a1}></audio> :
-            id == 'a2' ? <audio controls src={a2}></audio> :
-            id == 'a3' ? <audio controls src={a3}></audio> :
-
-            id == 'gc1' ? <audio controls src={gc1}></audio> :
-            id == 'gc2' ? <audio controls src={gc2}></audio> :
-            id == 'gc3' ? <audio controls src={gc3}></audio> :
-            id == 'gc4' ? <audio controls src={gc4}></audio> :
-            id == 'gc5' ? <audio controls src={gc5}></audio> :
-            id == 'gc6' ? <audio controls src={gc6}></audio> :
-            id == 'gc7' ? <audio controls src={gc7}></audio> :
-            id == 'gc8' ? <audio controls src={gc8}></audio> :
-            id == 'gc9' ? <audio controls src={gc9}></audio> :
-
-            id == 'f1' ? <audio controls src={f1}></audio> :
-            id == 'f2' ? <audio controls src={f2}></audio> :
-            id == 'f3' ? <audio controls src={f3}></audio> :
-            id == 'f4' ? <audio controls src={f4}></audio> :
-
-            id == 'b1' ? <audio controls src={b1}></audio> :
-            id == 'b2' ? <audio controls src={b2}></audio> :
-            id == 'b3' ? <audio controls src={b3}></audio> :
-            id == 'b4' ? <audio controls src={b4}></audio> :
-
-            id == 'e2' ? <audio controls src={e2}></audio> :
-            id == 'e3' ? <audio controls src={e3}></audio> :
-            id == 'e4' ? <audio controls src={e4}></audio> :
-            id == 'e5' ? <audio controls src={e5}></audio> :
-            id == 'e6' ? <audio controls src={e6}></audio> :
-            id == 'e7' ? <audio controls src={e7}></audio> :
-
-            <></>
-        }
+        <div class="m-[10px]">
+            {
+                id == 'a1' ? <audio controls src={a1}></audio> :
+                id == 'a2' ? <audio controls src={a2}></audio> :
+                id == 'a3' ? <audio controls src={a3}></audio> :
+    
+                id == 'gc1' ? <audio controls src={gc1}></audio> :
+                id == 'gc2' ? <audio controls src={gc2}></audio> :
+                id == 'gc3' ? <audio controls src={gc3}></audio> :
+                id == 'gc4' ? <audio controls src={gc4}></audio> :
+                id == 'gc5' ? <audio controls src={gc5}></audio> :
+                id == 'gc6' ? <audio controls src={gc6}></audio> :
+                id == 'gc7' ? <audio controls src={gc7}></audio> :
+                id == 'gc8' ? <audio controls src={gc8}></audio> :
+                id == 'gc9' ? <audio controls src={gc9}></audio> :
+    
+                id == 'f1' ? <audio controls src={f1}></audio> :
+                id == 'f2' ? <audio controls src={f2}></audio> :
+                id == 'f3' ? <audio controls src={f3}></audio> :
+                id == 'f4' ? <audio controls src={f4}></audio> :
+    
+                id == 'b1' ? <audio controls src={b1}></audio> :
+                id == 'b2' ? <audio controls src={b2}></audio> :
+                id == 'b3' ? <audio controls src={b3}></audio> :
+                id == 'b4' ? <audio controls src={b4}></audio> :
+    
+                id == 'e2' ? <audio controls src={e2}></audio> :
+                id == 'e3' ? <audio controls src={e3}></audio> :
+                id == 'e4' ? <audio controls src={e4}></audio> :
+                id == 'e5' ? <audio controls src={e5}></audio> :
+                id == 'e6' ? <audio controls src={e6}></audio> :
+                id == 'e7' ? <audio controls src={e7}></audio> :
+    
+                <></>
+            }
+        </div>
     </div>
 </div>

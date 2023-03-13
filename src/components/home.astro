@@ -10,23 +10,21 @@ import Home from '../image/home.png'
     span{
         font-family: 'Playball', cursive;
         color: #EE9471;
-        font-size: 24px;
     }
     p{
         font-family: 'Merriweather', serif;
-        font-size: 20px;
     }
 </style>
-<div class="bg-white w-screen mt-[20px] p-[80px] flex items-center">
-    <img src={Home} class="w-[30vw]"/>
-    <div class="flex flex-col items-center gap-[50px] w-[50vw]">
-        <h2 class="text-[#03585F] text-[52px] tracking-widest">Your Home</h2>
+<div class="bg-white w-screen mt-[20px] p-[5px] md:p-[80px] flex flex-col md:flex-row items-center">
+    <img src={Home} class="w-[90vw] md:w-[30vw]"/>
+    <div class="flex flex-col items-center gap-[15px] md:gap-[50px] w-[99vw] md:w-[70vw] lg:w-[50vw]">
+        <h2 class="text-[#03585F] text-[30px] md:text-[52px] tracking-widest">Your Home</h2>
         <div class="flex flex-col items-center tracking-[0.8px]">
-            <p>Not a website but a "<span>Home</span>" with <span>Love</span> and <span>Warmth</span></p>
-            <p>A place, you can trust with no criticism, hate</p>
-            <p>A "home" ... your Home!</p>
-            <p>From now Everything is safe here</p>
+            <p class="text-[13px] lg:text-[20px]">Not a website but a "<span class="text-[15px] md:text-[24px]">Home</span>" with <span class="text-[15px] md:text-[24px]">Love</span> and <span class="text-[15px] md:text-[24px]">Warmth</span></p>
+            <p class="text-[13px] lg:text-[20px]">A place, you can trust with no criticism, hate</p>
+            <p class="text-[13px] lg:text-[20px]">A "home" ... your Home!</p>
+            <p class="text-[13px] lg:text-[20px]">From now Everything is safe here</p>
         </div>
-        <button class="bg-[#EE9471] text-white py-[12px] px-[40px] rounded-lg text-[25px]">Explore</button>
+        <!-- <button class="bg-[#EE9471] text-white py-[12px] px-[40px] rounded-lg text-[25px]">Explore</button> -->
     </div>
 </div>

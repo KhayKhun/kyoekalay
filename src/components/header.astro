@@ -12,19 +12,18 @@ import Logo from '../image/logo.png';
     }
     .nav{
         /* background-color: rgba(89, 185, 140, 0.5); */
-        background-color: rgba(217, 229, 217, 0.5);
+        background-color: rgba(217, 229, 217, 0.7);
     }
 </style>
 
-<nav class="nav flex justify-between items-center h-[80px] px-[50px] z-[999] w-screen fixed">
+<nav class="nav flex justify-between items-center h-[40px] md:h-[80px] px-[10px] md:px-[50px] z-[999] w-screen fixed">
     <div class="flex gap-2">
-        <img src={Logo} class="w-[55px] h-[55px]"/>
-        <h2 class="text-[30px] mt-[6px]">KYOE KALAY</h2>
+        <img src={Logo} class="w-[32px] h-[32px] md:w-[55px] md:h-[55px]"/>
+        <h2 class="md:text-[30px] text-[13px] mt-[6px]">KYOE KALAY</h2>
     </div>
     <ul class="flex text-[18px] gap-5">
-        <li><a class="hover:cursor-pointer" href="/">Home</a></li>
-        <li><a class="hover:cursor-pointer">Personal Advice</a></li>
-        <li><a class="hover:cursor-pointer" href="/contant">Contant</a></li>
-        <li><a class="hover:cursor-pointer">Categories</a></li>
+        <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px]" href="/">ပင်မစာမျက်နှာ</a></li>
+        <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px]" href="/contant">စိတ်ပိုင်းဆိုင်ရာဆရာဝန်များ</a></li>
+        <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px] hidden md:flex">Categories</a></li>
     </ul>
 </nav>

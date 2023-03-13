@@ -5,6 +5,7 @@ import Business from '../image/business.png';
 import Community from '../image/community.png';
 import Education from '../image/education.png';
 import Family from '../image/family.png';
+import Reading from '../image/reading.png';
 import Music from '../image/music.png';
 import Notification from '../image/notification.png';
 import PositiveMindset from '../image/positive-mindset.png';
@@ -18,15 +19,15 @@ import SayChauk from '../image/SayChauk.png';
         font-family: 'Concert One', cursive;
     }
 </style>
-<div class="grid grid-cols-3 my-[40px] w-[90vw] gap-5">
-    <h1 class="concert-one col-span-3 text-[50px] mx-auto">Categories</h1>
-    <CategoryCard path="./community" withBg={true} label="Good Community" image={Community}/>
-    <CategoryCard path="./relationship" withBg={true} label="Relationship" image={Relationship}/>
-    <CategoryCard path="./family" withBg={true} label="Family" image={Family}/>
-    <CategoryCard path="./business" withBg={true} label="Bussiness" image={Business}/>
-    <CategoryCard path="./education" withBg={true} label="Education" image={Education}/>
-    <CategoryCard path="./positive-mindset" withBg={true} label="Positive mindset" image={PositiveMindset}/>
-    <CategoryCard path="./music" withBg={false} label="Music" image={Music}/>
-    <CategoryCard path="./addiction" withBg={true} label="Addiction" image={SayChauk}/>
-    <CategoryCard path="./prevent-suicide" withBg={false} label="" image={Notification}/>
+<div class="grid grid-cols-3 my-[40px] w-[90vw] gap-[7px] sm:gap-5">
+    <h1 class="concert-one col-span-3 text-[14px] md:text-[30px] mx-auto">သင့်မှာလူတွေမသိတောင် ကြိတ်မှိတ်ထားရတဲ့ ပြဿနာလေးတွေရှိလား?</h1>
+    <CategoryCard path="./community" withBg={true} label="ပတ်ဝန်းကျင်နှင့်စိတ်ကျရောဂါ" image={Community}/>
+    <CategoryCard path="./relationship" withBg={true} label="အသည်းကွဲနေလား?" image={Relationship}/>
+    <CategoryCard path="./family" withBg={true} label="မိသားစုကြောင့်စိတ်ဓာတ်ကျခြင်း" image={Family}/>
+    <CategoryCard path="./business" withBg={true} label="အလုပ်မှာစိတ်ဓာတ်ကျခြင်း" image={Business}/>
+    <CategoryCard path="./education" withBg={true} label="ပညာရေးပြဿနာများ" image={Education}/>
+    <CategoryCard path="./positive-mindset" withBg={true} label="အကောင်းမြင်စိတ်" image={PositiveMindset}/>
+    <CategoryCard path="./music" withBg={false} label="ကုသနိုင်စွမ်းရှိတဲ့သီချင်းများ" image={Music}/>
+    <CategoryCard path="./addiction" withBg={true} label="ကျွန်ုပ်စွဲလမ်းနေပြီလား" image={SayChauk}/>
+    <CategoryCard path="./article" withBg={false} label="စိတ်ခွန်အားပေးဆောင်းပါးများ" image={Reading}/>
 </div>

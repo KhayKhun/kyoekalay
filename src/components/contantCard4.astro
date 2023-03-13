@@ -1,0 +1,39 @@
+---
+const {title,link,phone,email,address} = Astro.props
+
+import Facebook from '../image/facebook.png';
+import Mail from '../image/mail.png';
+import Phone from '../image/phone.png';
+import Location from '../image/location.png';
+---
+<style>
+</style>
+<div class="bg-white rounded-lg flex flex-col p-[10px] lg:p-[50px] text-[20px] h-full">
+    <span class="font-bold text-[17px] md:text-[20px] lg:text-[23px] mb-[10px] mx-auto">{title}</span>
+    {
+        link ? <div class="flex my-[2.5px] text-blue-900 text-[13px] md:text-[17px] lg:text-[20px]">
+        <img class="w-[32px] h-[32px] mr-[5px] sm:mr-[8px] md:mr-[12px] md:[40px]" src={Facebook}/>
+        <a href={link} class="underline">{link}</a>
+    </div> : <div></div>
+    }
+    {
+        address ? <div class="flex my-[2.5px] font-semibold text-[16px] lg:text-[20px]">
+            <img class="w-[32px] h-[32px] mr-[5px] sm:mr-[8px] md:mr-[12px] md:[40px]" src={Location}/>
+            <span class="">{address}</span>
+        </div> : <div></div>
+    }
+    {
+        phone ? 
+    <div class="flex my-[2.5px] font-semibold text-[18px] sm:text-[22px] lg:text-[25px]">
+        <img class="w-[32px] h-[32px] mr-[5px] sm:mr-[8px] md:mr-[12px] md:[40px]" src={Phone}/>
+        <span class="">{phone}</span>
+    </div> : <div></div>
+    }
+    {
+        email ? 
+    <div class="flex my-[2.5px] text-blue-900 text-[13px] md:text-[17px] lg:text-[20px]">
+        <img class="w-[32px] h-[32px] mr-[5px] sm:mr-[8px] md:mr-[12px] md:[40px]" src={Mail} class="mr-[40px]"/>
+        <a href={email} class="underline">{email}</a>
+    </div> : <div></div>
+    }
+</div>

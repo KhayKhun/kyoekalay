@@ -1,5 +1,6 @@
 ---
 import Bg1 from '../image/bg-1.png';
+import Rightarrow from '../image/right.png';
 ---
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Fredoka:wght@300&display=swap');
@@ -9,8 +10,14 @@ import Bg1 from '../image/bg-1.png';
 </style>
 <div class="">
     <img src={Bg1} class="w-full z-0"/>
-    <div class="absolute top-[0px] z-[100] mt-[40vh] flex flex-col gap-[20vh] pl-[50px]">
-        <span class="concert-one text-white text-[57px]">Let's feel free to talk <br> the world!</span>
-        <button class="bg-[#EE9471] p-[20px] w-1/2 text-[30px] text-white rounded-lg">Mental Quiz</button>
-    </div>
+    <div class="absolute top-[0px] z-[100] mt-[50px] sm:mt-[100px] md:mt-[130px] lg:mt-[200px] ml-[5vw]">
+        <span class="text-white font-semibold text-[18px] sm:text-[24px] md:text-[34px] lg:text-[48px]">
+            သင်စိတ်ဓာတ်ကျနေချိန်မှာ <br>
+            ဆွဲတင်ပေးမယ့် <br>
+            <span class="font-bold">ကြိုးကလေး</span> တစ်စုံ</span>
+            <div class="mt-[10px] flex flex-col gap-[5px] w-[70vw] sm:mt-[25px]">
+                <button class="bg-[#301934] flex justify-around p-[8px] md:p-[20px] w-[70%] text-[10px] sm:text-[15px] md:text-[20px] lg:text-[24px] text-white rounded-lg">စိတ်ပိုင်းဆိုင်ရာဆရာဝန်များ <img src={Rightarrow} class="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] md:w-[30px] md:h-[30px]"/></button>
+                <button class="bg-[#AA336A] flex justify-around p-[8px] md:p-[20px] w-[70%] text-[10px] sm:text-[15px] md:text-[20px] lg:text-[24px text-white rounded-lg">စိတ်ခွန်အားပေးဆောင်းပါးများ <img src={Rightarrow} class="w-[20px] h-[20px] sm:w-[22px] sm:h-[22px] md:w-[30px] md:h-[30px]"/></button>
+            </div>
+        </div>
 </div>

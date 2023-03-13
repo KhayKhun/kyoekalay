@@ -2,12 +2,7 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import ContantImg from '../image/contant.png';
 
-import ConcantCard1 from "../components/contant/concantCard1.astro";
-import ConcantCard3 from "../components/contant/concantCard3.astro";
-import ConcantCard4 from "../components/contant/concantCard4.astro";
-
-import ContantBg from '../image/contantBg.png';
-
+import ContantCard4 from "../components/contantCard4.astro";
 ---
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Fredoka:wght@300&display=swap');
@@ -16,20 +11,20 @@ import ContantBg from '../image/contantBg.png';
     }
 </style>
 <MainLayout title="Contant">
+    <div class="mt-[80px] "/>
     <div class="flex flex-col items-center z-[3]">
-        <!-- <img src={ContantBg} class="sticky w-full z-0"/> -->
         <div class="flex w-screen h-[400px]">
-            <div class="flex flex-col w-[40%] bg-[#83BBB2] justify-center items-center">
+            <div class="flex flex-col w-[100%] md:w-[40%] bg-[#83BBB2] justify-center items-center">
                 <span class="text-[49px] concert-one text-white ml-[20px]">Communication Services</span>
                 <hr class="w-[70%] h-[8px] bg-gray-700 rounded-full"/>
                 <span>the connection between patients and psychologists</span>
             </div>
-            <img src={ContantImg} class="w-[60%]"/>
+            <img src={ContantImg} class="w-[60%] hidden md:flex"/>
         </div>
-        <div class="grid grid-cols-2 w-[90vw] gap-[15px] my-[50px]">
+        <div class="grid md:grid-cols-2 w-[90vw] gap-[15px] my-[50px]">
             
             <div class="h-full">
-                <ConcantCard4
+                <ContantCard4
                  title="Hepta Mental Health Clinc"
                  link="https://www.facebook.com/HeptaMentalHealth?mibextid=ZbWKwL"
                  phone="09885044884"
@@ -38,12 +33,12 @@ import ContantBg from '../image/contantBg.png';
                  />
             </div>
             <div class="h-full">
-                <ConcantCard1
+                <ContantCard4
                  title="Dr. Thinne (Life Therapist)" 
                  link="https://www.facebook.com/HeptaMentalHealth?mibextid=ZbWKwL"/>
             </div>
             <div class="h-full">
-                <ConcantCard3
+                <ContantCard4
                  title="TK Counselling"
                  link="https://www.facebook.com/Tr-Khin-Psychological-Guidance-Counselling-Service-105714208452009/"
                  phone="09450334140"
@@ -51,7 +46,7 @@ import ContantBg from '../image/contantBg.png';
                  />
             </div>
             <div class="h-full">
-                <ConcantCard4
+                <ContantCard4
                  title="Mental Health by Dr. De De"
                  link="https://www.facebook.com/profile.php?id=100087066691635&mibextid=ZbWKwL"
                  phone="09771581433"
@@ -60,12 +55,12 @@ import ContantBg from '../image/contantBg.png';
                  />
             </div>
             <div class="h-full">
-                <ConcantCard1
+                <ContantCard4
                  title="Passionate Heart Mental Health" 
                  link="https://www.facebook.com/profile.php?id=100075651559328&mibextid=LQQJ4d"/>
             </div>
             <div class="h-full">
-                <ConcantCard4
+                <ContantCard4
                  title="Mental Hea"
                  link="https://www.facebook.com/mentalhealmm?mibextid=ZbWKwL"
                  phone="09963284841"
@@ -74,7 +69,7 @@ import ContantBg from '../image/contantBg.png';
                  />
             </div>
             <div class="h-full">
-                <ConcantCard4
+                <ContantCard4
                  title="Lin Yaung Chi Oo (Mental Health Hospital)"
                  link="https://www.facebook.com/profile.php?id=100057346183746&mibextid=ZbWKwL"
                  phone="09444567811"
