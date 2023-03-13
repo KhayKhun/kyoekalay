@@ -14,17 +14,19 @@ export async function getStaticPaths() {
   }));
 }
 
-const selectedCategory = Astro.props.single;
-const faqs = selectedCategory.frontmatter.faqs;
+const {Content,frontmatter} = Astro.props.single;
 
-function activeDropdown(prop :any){
-    console.log(prop)
-}
+const faqs = frontmatter.faqs;
 ---
-<MainLayout title={selectedCategory.frontmatter.title}>
-  
-  <h1>{selectedCategory.frontmatter.title}</h1>
-
-  <FaqContainer faqData={faqs}/>
+  <MainLayout title={frontmatter.title}>
+  <div class="mt-[80px]"/>
+  <div>
+    <a href="/" class="underline">MainPage</a>
+      <span> > {frontmatter.title}</span>
+  </div>
+  <div class="mx-[10px] flex flex-col items-center">
+    <div class="w-[90vw]"><Content/></div>
+    <FaqContainer faqData={faqs}/>
+  </div>
 
 </MainLayout>
