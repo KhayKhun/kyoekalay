@@ -21,11 +21,10 @@ const faqs = frontmatter.faqs;
   <MainLayout title={frontmatter.title}>
   <div class="mt-[80px]"/>
   <div>
-    <a href="/" class="underline">MainPage</a>
-      <span> > {frontmatter.title}</span>
+    <a href="/" class="underline ml-[3vw] text-blue-900 font-semibold">MainPage</a><span> / {frontmatter.title}</span>
   </div>
-  <div class="mx-[10px] flex flex-col items-center">
-    <div class="w-[90vw]"><Content/></div>
+  <div class="my-[50px] flex flex-col items-center">
+    <div class="w-[90vw] text-[23px]"><Content/></div>
     <FaqContainer faqData={faqs}/>
   </div>
 

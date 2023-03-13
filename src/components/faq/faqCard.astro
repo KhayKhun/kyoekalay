@@ -1,12 +1,25 @@
 ---
 const {id,answer,question} = Astro.props
 import Arrow from '../../image/right-arrow.png';
+
+import a1 from '../../voices/a1.mp3';
+import a2 from '../../voices/a2.mp3';
+import a3 from '../../voices/a3.mp3';
+
 ---
+
+
 
 <div class="cursor-pointer w-[90vw]" id="faqQuestion">
     <div class="flex justify-between items-center bg-[#EE9471] w-full h-[50px] px-[10px] rounded-t-lg rounded-b-lg"><span class= "text-[26px]">{question}</span><img src={Arrow} class="w-[24px] h-[24px]"/></div>
     <div class="hidden bg-white w-full rounded-b-lg p-[10px]">
         {answer}
-        <audio controls class="m-[10px]"/>
+        
+        {
+            id == 'a1' ? <audio controls src={a1}></audio> :
+            id == 'a2' ? <audio controls src={a2}></audio> :
+            id == 'a3' ? <audio controls src={a3}></audio> :
+            <></>
+        }
     </div>
 </div>
