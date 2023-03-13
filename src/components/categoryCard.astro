@@ -16,7 +16,7 @@ const {label,image,withBg,path} = Astro.props;
                 <span class="text-[22px] font-bold">{label}</span>
             </div> 
             : 
-            <div class="flex-col flex items-center justify-center h-[210px]">
+            <div class="bg-[#EE9471] flex-col flex items-center justify-center h-[210px] rounded-2xl shadow-md shadow-gray-500">
                 <img src={image} class="w-[160px] h-[160px]"/>    
                 <span class="text-[22px] font-bold">{label}</span>
             </div>
