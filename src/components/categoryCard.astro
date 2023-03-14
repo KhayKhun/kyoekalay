@@ -11,12 +11,12 @@ const {label,image,withBg,path} = Astro.props;
 <a href={path}>
     {
         withBg ? 
-            <div class="bg-[#EE9471] flex-col flex items-center justify-center h-[110px] md:h-[210px] rounded-lg md:rounded-2xl  shadow-md shadow-gray-500">
+            <div class="bg-[#EE9471] hover:bg-[#eb8259] flex-col flex items-center justify-center h-[110px] md:h-[210px] rounded-lg md:rounded-2xl  shadow-md shadow-gray-500">
                 <img src={image} class="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"/>    
                 <span class="text-[10px] md:text-[22px] font-bold">{label}</span>
             </div> 
             :
-            <div class="bg-[#71eec2] flex-col flex items-center justify-center h-[110px] md:h-[210px] rounded-lg md:rounded-2xl  shadow-md shadow-gray-500">
+            <div class="bg-[#71eec2] hover:bg-[#48e5ae] flex-col flex items-center justify-center h-[110px] md:h-[210px] rounded-lg md:rounded-2xl  shadow-md shadow-gray-500">
                 <img src={image} class="w-[50px] h-[50px] md:w-[100px] md:h-[100px]"/>    
                 <span class="text-[10px] md:text-[22px] font-bold">{label}</span>
             </div> 

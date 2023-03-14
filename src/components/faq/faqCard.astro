@@ -21,6 +21,10 @@ import f1 from '../../voices/f1.mp3';
 import f2 from '../../voices/f2.mp3';
 import f3 from '../../voices/f3.mp3';
 import f4 from '../../voices/f4.mp3';
+import f5 from '../../voices/f5.mp3';
+import f6 from '../../voices/f6.mp3';
+import f7 from '../../voices/f7.mp3';
+import f8 from '../../voices/f8.mp3';
 
 import b1 from '../../voices/b1.mp3';
 import b2 from '../../voices/b2.mp3';
@@ -49,7 +53,7 @@ import rs4 from '../../voices/rs4.mp3';
 
 <div class="cursor-pointer w-[90vw]" id="faqQuestion">
     <div class="flex justify-between items-center bg-[#EE9471] w-full h-[50px] px-[10px] rounded-t-lg rounded-b-lg"><span class= " text-[13px] md:text-[17px] lg:text-[24px]">{question}</span><img src={Arrow} class="w-[24px] h-[24px]"/></div>
-    <div class="hidden bg-white w-full rounded-b-lg p-[10px] text-[13px] md:text-[17px] lg:text-[24px]">
+    <div class="hidden bg-white shadow-md w-full rounded-b-lg p-[10px] text-[13px] md:text-[17px] lg:text-[24px]">
         {answer}
         
         <div class="m-[10px]">
@@ -73,6 +77,10 @@ import rs4 from '../../voices/rs4.mp3';
                 id == 'f2' ? <audio controls src={f2}></audio> :
                 id == 'f3' ? <audio controls src={f3}></audio> :
                 id == 'f4' ? <audio controls src={f4}></audio> :
+                id == 'f5' ? <audio controls src={f5}></audio> :
+                id == 'f6' ? <audio controls src={f6}></audio> :
+                id == 'f7' ? <audio controls src={f7}></audio> :
+                id == 'f8' ? <audio controls src={f8}></audio> :
     
                 id == 'b1' ? <audio controls src={b1}></audio> :
                 id == 'b2' ? <audio controls src={b2}></audio> :
