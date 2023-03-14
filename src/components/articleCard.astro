@@ -1,7 +1,48 @@
 ---
-const {category,title,text} = Astro.props;
+const {frontmatter,Content} = Astro.props;
 ---
 
-<div class="border-2 border-blue-400">
-    {category}{title}{text}
+<div class="bg-white p-[50px]" >
+    
+    <p class="font font-semibold text-[14px] text-gray-700">{frontmatter.category}</p>
+    <h2 class="text-[26px] md:text-[34px] lg:text-[42px] font-bold my-[10px]">{frontmatter.title}</h2>
+    <div class="text-[19px] md:text-[27px]">
+        <div id="intro" class="">
+            {frontmatter.intro}<button id="seeMore" class="hover:cursor-pointer text-[25px] md:text-[30px] font-semibold text-blue-900">...see more</button>
+        </div>
+        <div id="content" class="hidden">
+            <Content/>
+            <button id="seeLess" class="hover:cursor-pointer text-[25px] md:text-[30px] font-semibold text-blue-900">...see less</button>
+        </div>
+    </div>
+    <div class="h-[3px] w-[90vw] bg-gray-500 my-[10px]"/>
 </div>
+
+<script>
+    const seeMore = document.querySelectorAll('#seeMore');
+    seeMore.forEach(sm => {
+        sm.addEventListener('click', function() {
+            this.parentElement.classList.toggle('hidden');
+            this.parentElement.parentElement.lastElementChild.classList.toggle('hidden');
+        })
+    })
+    const seeLess = document.querySelectorAll('#seeLess');
+    seeLess.forEach(sl => {
+        sl.addEventListener('click', function() {
+            this.parentElement.classList.toggle('hidden');
+            this.parentElement.parentElement.firstElementChild.classList.toggle('hidden');
+        })
+    })
+    // const seeMore = document.getElementById('seeMore');
+    // const seeLess = document.getElementById('seeLess');
+    // const content = document.getElementById('content');
+    // const intro = document.getElementById('intro');
+
+    // function toggleText(){
+    //     content.classList.toggle('hidden');
+    //     intro.classList.toggle('hidden');
+    //     seeMore.classList.toggle('hidden');
+    // }
+    // seeMore.addEventListener('click',toggleText)
+    // seeLess.addEventListener('click',toggleText)
+</script>
