@@ -2,6 +2,14 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import FaqContainer from "../components/faq/faqContainer.astro";
 
+import Business from '../image/business.png';
+import Community from '../image/community.png';
+import Education from '../image/education.png';
+import Family from '../image/family.png';
+import PositiveMindset from '../image/positive-mindset.png';
+import Relationship from '../image/relationship.png';
+import SayChauk from '../image/SayChauk.png';
+
 export async function getStaticPaths() {
   const markdowns = await Astro.glob("../markdowns/*.md");
   return markdowns.map((single) => ({
@@ -23,8 +31,34 @@ const faqs = frontmatter.faqs;
   <div>
     <a href="/" class="underline ml-[3vw] text-blue-900 font-semibold">MainPage</a><span> / {frontmatter.title}</span>
   </div>
-  <div class="my-[50px] flex flex-col items-center">
-    <div class="w-[90vw] text-[23px]"><Content/></div>
+
+  <div class="w-screen relative h-[80px]">
+    <div class="absolute bottom-0 bg-white w-screen h-[60px]"></div>
+    {
+      frontmatter.slug == "education" ? <img src={Education} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "addiction" ? <img src={SayChauk} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "relationship" ? <img src={Relationship} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "family" ? <img src={Family} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "business" ? <img src={Business} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "community" ? <img src={Community} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+    {
+      frontmatter.slug == "positive-mindset" ? <img src={PositiveMindset} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/> : <div></div>
+    }
+  </div>
+
+  <div class="mb-[50px] flex flex-col w-screen bg-white items-center">
+    <div class="w-[90vw] text-[16px] md:text-[24px]"><Content/></div>
     <FaqContainer faqData={faqs}/>
   </div>
 

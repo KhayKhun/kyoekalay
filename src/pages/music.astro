@@ -1,0 +1,167 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+
+import Music from '../image/music.png'
+
+import bg1 from '../image/musicbg1.png'
+import bg2 from '../image/musicbg2.png'
+import bg3 from '../image/musicbg3.png'
+---
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Dekko&display=swap');
+   p{
+        font-family: 'Dekko', cursive;
+    }
+    h2{
+        font-family: 'Concert-one',cursive;
+    }
+  </style>
+<MainLayout title="Music">
+    <div class="mt-[80px]"/>
+    <div class="w-screen relative h-[80px]">
+        <div class="absolute bottom-0 bg-white w-screen h-[60px]"></div>
+        <img src={Music} class="absolute bg-white top-0 left-[15%] w-[76px] h-[76px] border-[4px] border-white rounded-full"/>
+    </div>    
+    <div class="flex flex-col gap-3">
+        <div class="relative">
+            <img src={bg1} class="w-screen h-screen md:h-[120vh]"/>
+            <div class="absolute z-[5] top-0 flex justify-center flex-col w-screen h-screen p-[20px] md:p-[50px] lg:p-[90px]">
+            <h2 class="text-[25px] md:text-[35px] lg:text-[48px] font-bold mx-auto mb-[30px] md:my-[60px]">Calming and soothing music</h2>
+            <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">“Piano Sonata No. 14 in C-sharp minor"</a>
+                     by Ludwig van Beethoven
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Sparks"</a>
+                     by Röyksopp
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Spiegel im Spiegel"</a>
+                     by Arvo Pärt
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"The Blue Planet"</a>
+                     by Hans Zimmer
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Gymnopédie No. 1"</a>
+                     by Erik Satie
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Clair de Lune"</a>
+                     by Claude Debussy
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Weightless"</a>
+                     by Marconi Union
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Weightless Part 2"</a>
+                     by Marconi Union
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Orinoco Flow"</a>
+                     by Enya
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"The Four Seasons, Winter"</a>
+                     by Antonio Vivald
+                </p>
+            </div>
+        </div>
+        <!--  -->
+        <div class="relative">
+            <img src={bg2} class="w-screen h-screen md:h-[120vh]"/>
+            <div class="absolute z-[5] top-0 flex justify-center flex-col w-screen h-screen p-[20px] md:p-[50px] lg:p-[90px]">
+            <h2 class="text-[25px] md:text-[35px] lg:text-[48px] font-bold mx-auto mb-[30px] md:my-[60px]">Music with positive lyrics</h2>
+            <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Brave"</a>
+                     by Sara Bareilles
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"bHappy"</a>
+                      by Pharrell Williams
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">“I Will Survive"</a>
+                     by Gloria Gaynor
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Shake It Off"</a>
+                     by Taylor Swift
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Don't Stop Believin'"</a>
+                     by Journey
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Roar"</a>
+                     by Katy Perry
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Stronger"</a>
+                     by Kelly Clarkson
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Beautiful"</a>
+                     by Christina Aguilera
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Good Life"</a>
+                     by One Republic
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Eye of the Tiger"</a>
+                     by Survivor
+                </p>
+            </div>
+        </div>
+        <!--  -->
+        <div class="relative">
+            <img src={bg3} class="w-screen h-screen md:h-[120vh]"/>
+            <div class="absolute z-[5] top-0 flex justify-center flex-col w-screen h-screen p-[20px] md:p-[50px] lg:p-[90px]">
+            <h2 class="text-[25px] md:text-[35px] lg:text-[48px] font-bold mx-auto mb-[30px] md:my-[60px]">Music that reflects emotion</h2>
+            <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">“Someone Like You"</a>
+                     by Adele
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Everybody Hurts"</a>
+                     by R.E.M.
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Say You Love Me"</a>
+                     by Jessie Ware
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"All I Want"</a>
+                     by Kodaline
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Yesterday"</a>
+                     by The Beatles
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Say You Love Me"</a>
+                     by Jessie Ware
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Fix You"</a>
+                     by Coldplay
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Chasing Cars"</a>
+                     by Snow Patrol
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Skinny Love"</a>
+                     by Bon Iver
+                </p>
+                <p class="text-[16px] sm:text-[21px] md:text-[25px] sm:my-[2.8px]">
+                    <a class="underline" href="">"Human"</a>
+                     by Christina Perri
+                </p>
+            </div>
+        </div>
+    </div>
+</MainLayout>
