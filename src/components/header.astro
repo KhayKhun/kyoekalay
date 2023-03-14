@@ -24,6 +24,14 @@ import Logo from '../image/logo.png';
     <ul class="flex text-[18px] gap-5">
         <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px]" href="/">ပင်မစာမျက်နှာ</a></li>
         <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px]" href="/contant">စိတ်ပိုင်းဆိုင်ရာဆရာဝန်များ</a></li>
-        <li><a class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px] hidden md:flex">Categories</a></li>
+        <li><a id ="cate" class="hover:cursor-pointer hover:underline text-[10px]  sm:text-[15px] md:text-[18px] lg:text-[23px] hidden md:flex">Categories</a></li>
     </ul>
 </nav>
+<script>
+    function scrollToPlay(id) {
+    var element = document.getElementById(id);
+    element.scrollIntoView({behavior: 'smooth'});
+    }
+    const cateLink = document.getElementById('cate');
+    cateLink.addEventListener('click', ()=>{scrollToPlay('here')})
+</script>
