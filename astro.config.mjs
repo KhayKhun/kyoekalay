@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://KhayKhun.github.io/kyoekalay',
-  base: '/dist/',
+  base: '/dist',
 });
