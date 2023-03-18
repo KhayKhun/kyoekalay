@@ -5,6 +5,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://KhayKhun.github.io/kyoekalay',
-  base: '/dist',
+  site: 'https://khaykhun.github.io',
+  base: '/kyoekalay/dist/',
 });
